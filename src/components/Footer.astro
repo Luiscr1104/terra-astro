@@ -1,0 +1,76 @@
+---
+import "@/styles/global.css";
+---
+
+<footer class="bg-gray-900 text-gray-300 py-12">
+  <div class="container mx-auto px-6 md:px-12 lg:px-16">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div>
+        <a href="/" class="inline-block mb-6">
+          <img
+            src="/logo.png"
+            alt="TerraRealEstateCR Logo"
+            width="180"
+            height="50"
+            class="size-28 brightness-200"
+          />
+        </a>
+        <p class="mb-6">
+          Especialistas en terrenos y propiedades premium en Costa Rica, ofreciendo oportunidades de inversión
+          excepcionales.
+        </p>
+        <div class="flex gap-4">
+          <a href="#" class="hover:text-white transition-colors">
+            <i class="fab fa-facebook h-5 w-5"></i>
+          </a>
+          <a href="#" class="hover:text-white transition-colors">
+            <i class="fab fa-instagram h-5 w-5"></i>
+          </a>
+          <a href="#" class="hover:text-white transition-colors">
+            <i class="fab fa-twitter h-5 w-5"></i>
+          </a>
+          <a href="#" class="hover:text-white transition-colors">
+            <i class="fab fa-linkedin h-5 w-5"></i>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h3 class="text-white text-lg font-semibold mb-6">Enlaces rápidos</h3>
+        <ul class="space-y-3">
+          <li><a href="#" class="hover:text-white transition-colors">Inicio</a></li>
+          <li><a href="#properties" class="hover:text-white transition-colors">Propiedades</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">Servicios</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">Sobre nosotros</a></li>
+          <li><a href="#contact" class="hover:text-white transition-colors">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-white text-lg font-semibold mb-6">Servicios</h3>
+        <ul class="space-y-3">
+          <li><a href="#" class="hover:text-white transition-colors">Compra de terrenos</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">Venta de propiedades</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">Asesoría legal</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">Desarrollo de proyectos</a></li>
+          <li><a href="#" class="hover:text-white transition-colors">Inversiones inmobiliarias</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-white text-lg font-semibold mb-6">Boletín informativo</h3>
+        <p class="mb-4">Suscríbase para recibir las últimas noticias y ofertas exclusivas.</p>
+        <div class="flex">
+          <input
+            type="email"
+            placeholder="Su correo electrónico"
+            class="px-4 py-2 w-full bg-gray-800 border border-gray-700 rounded-l-md focus:outline-none focus:ring-1 focus:ring-green-500"
+          />
+          <button class="px-4 py-2 bg-green-600 text-white rounded-r-md hover:bg-green-700 transition-colors">
+            Enviar
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-gray-800 mt-12 pt-8 text-center text-sm">
+      <p>© {new Date().getFullYear()} TerraRealEstateCR. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>

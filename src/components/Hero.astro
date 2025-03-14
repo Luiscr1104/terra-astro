@@ -1,0 +1,81 @@
+---
+import { Button } from "@/components/ui/button";
+---
+
+<section class="py-20 md:py-14 overflow-hidden bg-white pt-20">
+  <div class="container relative z-10">
+    <div class="flex flex-col items-center text-center mb-12">
+      <div class="mb-6">
+      </div>
+      <h1 class="text-4xl md:text-6xl font-bold tracking-tight text-gray-900 mb-6">
+        Encuentre su terreno ideal en Costa Rica
+      </h1>
+      <p class="text-xl text-gray-600 max-w-3xl mb-8">
+        Ofrecemos las mejores propiedades y terrenos con ubicaciones privilegiadas, vistas impresionantes y
+        oportunidades de inversión excepcionales.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <Button size="lg" class="bg-green-600 hover:bg-green-700">Ver propiedades</Button>
+        <Button size="lg" variant="outline" class="border-green-600 text-green-600 hover:bg-green-50">
+          Contactar un asesor
+        </Button>
+      </div>
+    </div>
+
+    <!-- Grid de Beneficios -->
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
+      <div class="relative col-span-1 md:col-span-2 lg:col-span-2 row-span-2 rounded-xl overflow-hidden group shadow-lg">
+        <img
+          src="/aerea1.png"
+          alt="Terreno Premium"
+          width="800"
+          height="600"
+          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6">
+          <h3 class="text-white text-xl font-bold mb-2">Terrenos Premium</h3>
+          <p class="text-gray-200 mb-4">Descubra nuestras propiedades más exclusivas con vistas panorámicas</p>
+          <Button variant="outline" size="sm" class="w-fit text-white border-white hover:bg-white/20">
+            Explorar
+          </Button>
+        </div>
+      </div>
+
+      <div class="relative col-span-1 rounded-xl overflow-hidden group bg-green-600/90 shadow-lg p-6 flex flex-col justify-between">
+        <h3 class="text-white text-lg font-bold mb-2">Vistas Panorámicas</h3>
+        <p class="text-white/80 text-sm">Terrenos con vistas impresionantes a montañas y océano</p>
+      </div>
+
+      <div class="relative col-span-1 rounded-xl overflow-hidden group bg-yellow-400/90 shadow-lg p-6 flex flex-col justify-between">
+        <h3 class="text-gray-800 text-lg font-bold mb-2">Seguridad Jurídica</h3>
+        <p class="text-gray-800/80 text-sm">Todas nuestras propiedades con documentación legal verificada</p>
+      </div>
+
+      <div class="relative col-span-1 rounded-xl overflow-hidden group shadow-lg">
+        <img
+          src="/rio.png"
+          alt="Ubicación Estratégica"
+          width="400"
+          height="300"
+          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6">
+          <h3 class="text-white text-lg font-bold">Ubicaciones Estratégicas</h3>
+        </div>
+      </div>
+
+      <div class="relative col-span-1 rounded-xl overflow-hidden group shadow-lg">
+        <img
+          src="/aerea1.png"
+          alt="Amplios Terrenos"
+          width="400"
+          height="300"
+          class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6">
+          <h3 class="text-white text-lg font-bold">Amplios Terrenos</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
