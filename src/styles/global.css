@@ -210,3 +210,14 @@
 .custom-shape-divider-top-1741885055 .shape-fill {
   fill: #47a34e;
 }
+.custom-shape-divider-top-1741885055 {
+  position: relative;
+  width: 100%;
+  overflow: hidden; /* oculta cualquier parte que se salga */
+  line-height: 0; /* evita espacios innecesarios */
+}
+
+.custom-shape-divider-top-1741885055 svg {
+  display: block;
+  width: 100%; /* ocupa todo el ancho del contenedor */
+}
