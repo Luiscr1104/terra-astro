@@ -47,11 +47,7 @@ const properties = [
     lastUpdated: "Hace 2 días",
     status: "Disponible",
     image: "/aerea1.png",
-    images: [
-      "/aerea1.png",
-      "/cruz.jpg",
-      "/placeholder.svg?height=600&width=800&text=Vista+Aérea",
-    ],
+    images: ["/aerea1.png", "/cruz.jpg", "/aerea1.png"],
   },
   {
     id: 2,
@@ -81,11 +77,7 @@ const properties = [
     lastUpdated: "Hace 5 días",
     status: "Disponible",
     image: "/aerea1.png",
-    images: [
-      "/cruz.jpg",
-      "/placeholder.svg?height=600&width=800&text=Plano+Catastrado",
-      "/placeholder.svg?height=600&width=800&text=Vista+Panorámica",
-    ],
+    images: ["/cruz.jpg", "/aerea1.png", "/cruz.jpg"],
   },
   {
     id: 3,
@@ -115,11 +107,7 @@ const properties = [
     lastUpdated: "Hace 1 semana",
     status: "Última disponible",
     image: "/aerea1.png",
-    images: [
-      "/rio.png",
-      "/placeholder.svg?height=600&width=800&text=Área+Boscosa",
-      "/placeholder.svg?height=600&width=800&text=Zona+Construcción",
-    ],
+    images: ["/rio.png", "/cruz.jpg", "/aerea1.png"],
   },
 ];
 

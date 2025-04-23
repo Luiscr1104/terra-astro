@@ -1,5 +1,6 @@
 ---
 import { Button } from "@/components/ui/button";
+import WhatsAppIcon from "@/components/icons/WhatsappIcon.astro";
 ---
 
 <header
@@ -10,7 +11,7 @@ import { Button } from "@/components/ui/button";
   <div class="container mx-auto flex items-center justify-between py-4">
     <a href="/" class="relative z-10 flex items-center">
       <img
-        src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logotipo-b8aH3AUHFvLH0XoTEYxOjNcBuS0xXO.png"
+        src="/logo.png"
         alt="TerraRealEstateCR Logo"
         width="150"
         height="50"
@@ -21,34 +22,86 @@ import { Button } from "@/components/ui/button";
 
     <!-- Desktop Navigation -->
     <nav class="hidden lg:flex items-center gap-8">
-      <a href="#features" class="text-base font-medium text-gray-700 transition-colors hover:text-teal-600">Características</a>
-      <a href="#properties" class="text-base font-medium text-gray-700 transition-colors hover:text-teal-600">Propiedades</a>
-      <a href="#testimonials" class="text-base font-medium text-gray-700 transition-colors hover:text-teal-600">Testimonios</a>
-      <a href="#contact" class="text-base font-medium text-gray-700 transition-colors hover:text-teal-600">Contacto</a>
+      <a
+        href="#features"
+        class="text-base font-medium text-gray-700 transition-colors hover:text-teal-600"
+        >Características</a
+      >
+      <a
+        href="#properties"
+        class="text-base font-medium text-gray-700 transition-colors hover:text-teal-600"
+        >Propiedades</a
+      >
+      <a
+        href="#testimonials"
+        class="text-base font-medium text-gray-700 transition-colors hover:text-teal-600"
+        >Testimonios</a
+      >
+      <a
+        href="#contact"
+        class="text-base font-medium text-gray-700 transition-colors hover:text-teal-600"
+        >Contacto</a
+      >
     </nav>
 
     <!-- Desktop CTA Buttons -->
-    <div class="hidden lg:flex items-center gap-4">
-      <Button variant="outline" className="border-teal-600 text-teal-600 hover:bg-teal-50">Iniciar Sesión</Button>
-      <Button className="bg-green-600 hover:bg-green-700">Contactar</Button>
+    <div class="hidden lg:flex items-center gap-4 mr-4">
+      <a
+        href="https://wa.me/50687050826?text=Hola,%20estoy%20interesado%20en%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20propiedades%20de%20TerraRealEstateCR"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Button
+          className="bg-green-600 hover:bg-green-700 flex items-center gap-2"
+        >
+          <WhatsAppIcon className="size-8" />
+          Contactar
+        </Button>
+      </a>
     </div>
 
     <!-- Mobile Menu Button -->
     <button id="menu-toggle" class="lg:hidden p-2 relative z-10">
-      <svg id="menu-icon" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-        <line x1="3" y1="12" x2="21" y2="12" />
-        <line x1="3" y1="6" x2="21" y2="6" />
-        <line x1="3" y1="18" x2="21" y2="18" />
+      <svg
+        id="menu-icon"
+        class="h-6 w-6"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
       </svg>
     </button>
   </div>
 
   <!-- Mobile Navigation -->
-  <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-white shadow-lg p-6 z-30 flex flex-col space-y-6 lg:hidden">
-    <a href="#properties" class="text-lg font-medium text-gray-700 hover:text-teal-600">Propiedades</a>
-    <a href="#construccion" class="text-lg font-medium text-gray-700 hover:text-teal-600">Construcción</a>
-    <a href="#about" class="text-lg font-medium text-gray-700 hover:text-teal-600">Sobre Nosotros</a>
-    <Button className="bg-orange-500 hover:bg-orange-600 w-full">Contactar</Button>
+  <div
+    id="mobile-menu"
+    class="hidden absolute top-full left-0 w-full bg-white shadow-lg p-6 z-30 flex flex-col space-y-6 lg:hidden"
+  >
+    <a
+      href="#properties"
+      class="text-lg font-medium text-gray-700 hover:text-teal-600"
+      >Propiedades</a
+    >
+    <a
+      href="#construccion"
+      class="text-lg font-medium text-gray-700 hover:text-teal-600"
+      >Construcción</a
+    >
+    <a
+      href="#about"
+      class="text-lg font-medium text-gray-700 hover:text-teal-600"
+      >Sobre Nosotros</a
+    >
+    <Button className="bg-orange-500 hover:bg-orange-600 w-full"
+      >Contactar</Button
+    >
   </div>
 </header>
 
@@ -57,10 +110,12 @@ import { Button } from "@/components/ui/button";
   document.addEventListener("DOMContentLoaded", () => {
     const theme = localStorage.getItem("theme") || "light";
     document.documentElement.classList.add(theme);
-    
+
     document.querySelectorAll("[data-theme-toggle]").forEach((button) => {
       button.addEventListener("click", () => {
-        const newTheme = document.documentElement.classList.contains("dark") ? "light" : "dark";
+        const newTheme = document.documentElement.classList.contains("dark")
+          ? "light"
+          : "dark";
         document.documentElement.classList.remove("light", "dark");
         document.documentElement.classList.add(newTheme);
         localStorage.setItem("theme", newTheme);

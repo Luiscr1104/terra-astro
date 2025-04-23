@@ -1,26 +1,31 @@
----                               
-	import '@/styles/global.css' 
-	import Navbar from '@/components/Navbar.astro';
-	import Footer from '@/components/Footer.astro';
----         
+---
+import "@/styles/global.css";
+import Navbar from "@/components/Navbar.astro";
+import Footer from "@/components/Footer.astro";
+---
+
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<Navbar />
-		<div class="custom-shape-divider-top-1741885055">
-			<svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-				<path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
-			</svg>
-		</div>
-		<slot />
-		
-		<Footer />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <title>Terra Real Estate CR</title>
+  </head>
+  <body>
+    <Navbar />
+    <div class="custom-shape-divider-top-1741885055">
+      <svg
+        data-name="Layer 1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1200 120"
+        preserveAspectRatio="none"
+      >
+        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"
+        ></path>
+      </svg>
+    </div>
+    <slot />
+    <Footer />
+  </body>
 </html>
