@@ -67,23 +67,34 @@ export default function FeaturesSection() {
 
         {/* Tabs */}
         <div className="flex justify-center flex-wrap gap-4 mb-12">
-          {features.map((feature, i) => (
-            <button
-              key={feature.id}
-              onClick={() => setActive(i)}
-              className={cn(
-                "flex items-center gap-2 px-4 py-2 rounded-full transition",
-                active === i
-                  ? `${feature.color} text-white shadow-lg`
-                  : "bg-gray-100 text-gray-700 hover:bg-gray-200"
-              )}
-            >
-              <span className="p-1 rounded-full bg-white/20">
-                {feature.icon}
-              </span>
-              {feature.title}
-            </button>
-          ))}
+          {features.map((feature, i) => {
+            const isActive = active === i;
+
+            return (
+              <button
+                key={feature.id}
+                onClick={() => setActive(i)}
+                className={cn(
+                  "flex items-center gap-2 px-4 py-2 rounded-full transition",
+                  isActive
+                    ? `${feature.color} text-white shadow-lg`
+                    : "bg-gray-200 text-black hover:bg-gray-300"
+                )}
+              >
+                <span
+                  className={cn(
+                    "p-1 rounded-full transition",
+                    isActive
+                      ? "bg-white/20 text-white"
+                      : "bg-blue-700 text-green-600 shadow-sm"
+                  )}
+                >
+                  {feature.icon}
+                </span>
+                {feature.title}
+              </button>
+            );
+          })}
         </div>
 
         {/* Feature Panel */}

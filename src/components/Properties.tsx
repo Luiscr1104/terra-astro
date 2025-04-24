@@ -374,13 +374,13 @@ export default function Properties() {
             Descubra nuestra colección completa de terrenos premium en Costa
             Rica
           </p>
-          <Button
-            variant="outline"
-            size="lg"
-            className="border-green-600 text-green-600 hover:bg-green-50"
+          <a
+            href="/propiedades"
+            className="inline-flex items-center justify-center border border-green-600 text-green-600 hover:bg-green-50 rounded-lg text-lg px-6 py-3 transition-all duration-500 group"
           >
-            Ver todas las propiedades <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
+            Ver todas las propiedades
+            <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+          </a>
         </div>
       </div>
     </section>

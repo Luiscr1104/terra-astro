@@ -1,6 +1,9 @@
 ---
 import { Button } from "@/components/ui/button";
 import WhatsAppIcon from "@/components/icons/WhatsappIcon.astro";
+import InstagramIcon from "@/components/icons/InstagramIcon.astro";
+import FacebookIcon from "@/components/icons/FacebookIcon.astro";
+import YouTubeIcon from "@/components/icons/YouTubeIcon.astro";
 ---
 
 <header
@@ -24,28 +27,58 @@ import WhatsAppIcon from "@/components/icons/WhatsappIcon.astro";
     <nav class="hidden lg:flex items-center gap-8">
       <a
         href="#features"
-        class="text-base font-medium text-gray-700 transition-colors hover:text-teal-600"
+        class="text-base font-medium text-gray-700 transition-colors hover:text-green-600"
         >Características</a
       >
       <a
         href="#properties"
-        class="text-base font-medium text-gray-700 transition-colors hover:text-teal-600"
+        class="text-base font-medium text-gray-700 transition-colors hover:text-green-600"
         >Propiedades</a
       >
       <a
         href="#testimonials"
-        class="text-base font-medium text-gray-700 transition-colors hover:text-teal-600"
+        class="text-base font-medium text-gray-700 transition-colors hover:text-green-600"
         >Testimonios</a
       >
       <a
         href="#contact"
-        class="text-base font-medium text-gray-700 transition-colors hover:text-teal-600"
+        class="text-base font-medium text-gray-700 transition-colors hover:text-green-600"
         >Contacto</a
       >
     </nav>
 
     <!-- Desktop CTA Buttons -->
     <div class="hidden lg:flex items-center gap-4 mr-4">
+      <!-- Redes sociales -->
+      <div class="flex gap-3 items-center ml-4">
+        <a
+          href="https://www.youtube.com/@TerraRealEstateCR"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <YouTubeIcon
+            class="text-[#47a34e] hover:text-green-800 transition size-10"
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/terrarealestatecr/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <InstagramIcon
+            class="text-[#47a34e] hover:text-green-800 transition size-9"
+          />
+        </a>
+        <a
+          href="https://www.facebook.com/terrarealestatecr"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FacebookIcon
+            class="text-[#47a34e] hover:text-green-800 transition size-10"
+          />
+        </a>
+      </div>
       <a
         href="https://wa.me/50687050826?text=Hola,%20estoy%20interesado%20en%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20propiedades%20de%20TerraRealEstateCR"
         target="_blank"
